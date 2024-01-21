@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Underdog', system-ui;
+}
+
+.about-film{
+	height: 100vh;
+	background-image: url(images/How-To-Train-Your-Dragon-Header-e1687293096422.png);
+	background-size: cover;
+	display: flex;
+}
+
+.about-film input{
+	display: none;
+}
+
+.about-film label img{
+	height: 100%;
+}
+
+.about-film label{
+	box-shadow: 2px 0 2px black, -2px 0 5px 1px white;
+	cursor: pointer;
+}
+
+.about-item-1,
+.about-item-2,
+.about-item-3,
+.about-item-4,
+.about-item-5 {
+	width: 0;
+	overflow: hidden;
+	background-color: rgba(209, 238, 255, 0.8);
+	transition: all .5s linear;
+}
+
+#data1:checked ~ .about-item-1,
+#data2:checked ~ .about-item-2,
+#data3:checked ~ .about-item-3,
+#data4:checked ~ .about-item-4,
+#data5:checked ~ .about-item-5 {
+	width: 100%;
+	
+}
+
+.about-item-1 img,
+.about-item-3 img,
+.about-item-4 img,
+.about-item-5 img {
+	width: 400px;
+	height: 500px;
+	object-fit: cover;
+	padding: 20px;
+	float: left;
+}
+
+.about-item-2 img,
+.about-item-4 img {
+	width: 400px;
+	height: 500px;
+	object-fit: cover;
+	padding: 20px;
+	float: right;
+} 
+
+.about-item-1 p,
+.about-item-2 p,
+.about-item-3 p,
+.about-item-4 p,
+.about-item-5 p {
+	font-size: 22px;
+	padding: 20px;
+}
+
+#data1:checked ~ .about-label-1,
+#data2:checked ~ .about-label-2,
+#data3:checked ~ .about-label-3,
+#data4:checked ~ .about-label-4,
+#data5:checked ~ .about-label-5 {
+	cursor: default;
+}
+	
